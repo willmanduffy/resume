@@ -1,122 +1,88 @@
 \documentclass{resume}
 
-\rohead{\thepage\ of \pageref{LastPage}}
+% \rohead{\thepage\ of \pageref{LastPage}}
 
 \cofoot{
 	\begin{spacing}{0.8}
 %%	\so{Address, Line 2, City, ST 00000} \\
 	\small{
 %%		\footerphone{(555) 555-5555} \
-		\footerlink{http://dcousineau.com/} \
-		\footeremail{dcousineau@gmail.com}
+		\footerlink{http://www.single-malt.co/} \
+		\footeremail{willman.duffy@gmail.com}
 	} \\
-	\small{\emph{
-		\LaTeX source for this resum$\acute{e}$ located at \href{https://github.com/dcousineau/resume}{github.com/dcousineau/resume}
-	}}
+	% \small{\emph{
+	% 	\LaTeX source for this resum$\acute{e}$ located at \href{https://github.com/philduffy/resume}{github.com/philduffy/resume}
+	% }}
 	\end{spacing}
 }
 
 \begin{document}
 
-\name{Daniel Cousineau}
+\name{Philip Willman Duffy}
 
 \smallskip
 
 \section{Skills}
 
 \stdtable{
-Languages  & \emph{Professional}: PHP, JavaScript, Python, SQL\\
-           & \emph{Hobby/Education}: Clojure, \LaTeX, C, C\#, C++, C, Java\\
-Tools      & Tesseract, OpenCV, Silex, Symfony2, Doctrine2, Backbone.js, node.js, socket.io\\
-Services   & Amazon S3, Rackspace CloudFiles, Stripe, PayPal\\
-           & \emph{APIs}: Twitter, Facebook, LinkedIn, YouTube, Google Analytics\\
-DBs        & MySQL, MongoDB, neo4j, SQL Server\\
+Languages  & \emph{Professional}: Ruby (Rails), JavaScript, HTML, CSS (Sass), SQL\\
+					 & \emph{Testing}: Rails (Rspec and Minitest), JavaScript (Jasmine)\\
+           & \emph{Hobby/Education}: C++, Bash, PHP, Perl\\
+Tools      & Git, Sublime Text 3, Vim, OS X, Linux, VirtualBox, Zsh \\
+Services   & Amazon S3, Digital Ocean, Heroku, Redis (Sidekiq and Resque)\\
+Databases  & MySQL, PostgreSQL\\
 }
 
 \section{Relevant Experience}
 
 \employer
-	{CROSCON}
-	{http://croscon.com/}
-	{May 2013 --- \emph{Present}}
-	{Senior Engineer}
-	{Lead team of software developers to glorious victory in battle.}
+	{Relay FM}
+	{http://www.relay.fm/}
+	{July 2014 --- \emph{Present}}
+	{Freelance Consultant}
+	{Worked with the client from Goodstuff.fm to adapt the podcast CMS to the needs of another client. Most of the core functionality remained intact but new challenges were added. The app was tweaked to be much more resistant to higher traffic numbers. On launch day the application received a peak of 1,000 requests per minute and maintained an average response time of 50ms during those peaks. Many of these changes were then backported to the original parent application.}
 \\ \\ \\
 \employer
-	{Splash Media}
-	{http://splashmedia.com/}
-	{February 2012 --- May 2013}
-	{Software Wizard}
-	{Core developer of \href{http://splashcube.com/}{SplashCube}, \href{http://splashmediau.com/}{Splash Media U} and other initiatives. Maintained server infrastructure consuming data from 5 social networks on anywhere from an hourly to a near-realtime basis for hundreds of accounts, utilizing queue-based architectures to increase throughput and resiliency. Helped implement and maintain bleeding-edge techniques for clean and high quality codebases, from Composer, Vagrant, and Puppet for consistent developer environments; to Fabric for deployment automation. Refactored front-end to use Backbone.js and developed streaming services and consumption using node.js and socket.io.}
+	{Goodstuff.fm}
+	{http://www.goodstuff.fm/}
+	{January 2014 --- \emph{Present}}
+	{Freelance Consultant}
+	{Acted as the sole backend developer on a Podcast CMS. Created a fully functional application complete with S3 storage integration for mp3s and images, a protected management area, RSS feed generation, automatic posting to Twitter for new episodes and a complete test suite that runs in less than ten seconds. Tapped into Carrierwave's uploader functionality to create a feature that overwrites id3 tags and album artwork on mp3s when uploaded. This happens on the fly while uploading to Amazon S3. Generated an iTunes compatible podcast RSS feed for each unique podcast. The entire CMS backend was done in roughly 20 hours of work.}
 \\ \\ \\
 \employer
-	{RAPP}
-	{http://rapp.com}
-	{March 2011 --- January 2012}
-	{Interactive Software Engineer}
-	{Co-lead architect \& developer for high profile website. Built an interactive movie memory wall \& kiosk using \href{http://flask.pocoo.org/}{Flask} (Python), HTML \& JavaScript for AMC Theatres for use in booths at public events such as their Comicon San Deigo after-party and the \href{http://www.accesshollywood.com/backstage-at-the-emmys/emmys-2011-backstage-at-the-hp-touchsmart-gift-lounge-day-1_gallerytab_3129/20}{2011 Emmy Awards}.}
+	{WeSpire}
+	{http://www.wespire.com/}
+	{September 2011 --- \emph{Present}}
+	{Full Stack Developer}
+	{Responsible for developing and helping architect a leading edge corporate sustainability and engagement platform with the Ruby on Rails framework. Developed and architected hundreds of features while utilizing test driven development in an agile environment. Became known as the maintainer of the MiniTest test suite through my eternal battle to keep the test suite run time under 3 minutes. Also championed the use of a CI server and SimpleCov to track test coverage. Acted primarily as a backend developer but spent a large portion of my time filling in as a front end developer as needed. I created the front-end style guide as it exists today and helped make sure that all code review was held up to its standards. Converted the entire application from a split mobile web app to a responsive app by myself in 2 weeks.}
 \\ \\ \\
 \employer
-	{Moverati}
-	{http://moverati.com}
-	{September 2010 --- March 2011}
-	{Developer}
-	{Develop and maintain web presence using Zend Framework, Symfony DI, and Doctrine 2.0. Helped migrate storage to Amazon S3. Maintained front-end interactivity with jQuery and Facebook connect. Ensured site scaled with spikes in traffic during events such as the NFL Superbowl Experience 2011.}
+	{Terrible Labs}
+	{http://www.terriblelabs.com/}
+	{August 2011 --- May 2012}
+	{Junior Developer}
+	{Worked with multiple clients on Ruby on Rails projects with features that were designed with test-driven development. Created web-based HTML5 mobile applications with a backbone.js front-end and Ruby on Rails. Worked both remotely and in-house at startups and kept track of all work done with GitHub issues and Pivotal Tracker.}
 \\ \\ \\
 \employer
-	{Orthochronos Forecasting, LLC.}
-	{http://orthochronos.com/}
-	{July 2009 --- July 2011}
-	{Consultant}
-	{Built and maintained original application, retained for maintenance and upgrades. Implemented PayPal recurring billing and a Python data import daemon.}
-\\ \\ \\
-\employer
-	{Texas A\&M Division of Student Affairs Department of IT}
-	{http://doit.tamu.edu/}
-	{April 2009 --- September 2010}
-	{Senior Software Applications Developer}
-	{Developed Zend Framework and Doctrine 1.x applications. Developed Python daemon to import student information and provided via JSON API.}
-\\ \\
-\emph{Full employment history available upon request\ldots}
+	{Harvard University}
+	{http://www.harvard.edu/}
+	{January 2011 --- May 2011}
+	{IT Intern}
+	{Developed and distributed unique images for specialty machines in the Harvard College Libraries. Fulfilled all client requests and managed them through DK Help Desk. Diagnosed and remedied issues with LANDesk Remote Agent system. Helped facilitate the upgrade of over one hundred staff machines.}
 
-\section{Selected Open Source Contributions}
+\section{Side Projects}
 
 \project
-	{Phorever}
-	{https://github.com/dcousineau/phorever}
+	{Sorta}
+	{http://www.sortalist.com/}
 	{Creator}
-	{PHP daemon and long-running process management, built to address a need internally at Splash Media and released as open source.}
-\\ \\ \\
-\project
-	{Spaz / SpazHD for HP WebOS}
-	{http://getspaz.com/}
-	{\small{(Former)} \normalsize{Contributor}}
-	{A fully open-source twitter client for HP WebOS devices including the TouchPad. Contributed to maintenence when Twitter introduced PIN authentication, worked on low-level Enyo performance, and served as a rep by attending WebOS developer days.}
-
-\section{Selected Presentations}
-
-\begin{spacing}{1.25}
-\href{https://speakerdeck.com/dcousineau/pulling-the-strings-backbone-dot-marionette-and-require-dot-js-for-single-page-apps}{``Pulling The Strings: Backbone.Marionette and RequireJS for Single Page Apps"} --- \href{http://2014.empirejs.org/#/speakers}{EmpireJS 2014}\\
-\href{https://speakerdeck.com/dcousineau/queues-and-the-giant-beanstalkd}{``Queues and the Giant beanstalkd"} --- \href{http://confoo.ca/}{ConFoo 2013}\\
-\href{https://speakerdeck.com/dcousineau/the-backbone-dot-js-refactor}{``The Backbone.js Refactor"} --- \href{http://confoo.ca/}{ConFoo 2013}\\
-\href{https://speakerdeck.com/u/dcousineau/p/html5-and-javascript-part-deux-javascript}{``HTML5 and JavaScript"} tutorial --- \href{http://tek12.phparch.com/talks/#HTML5-and-Javascript-for-the-PHP-Developer}{tek12} with \href{http://jakefolio.com/}{Jake Smith} \emph{(covered JavaScript portion)}
-\\
-\href{http://www.slideshare.net/eljefe/jquery-mobile-for-fun-and-profit}{``jQuery Mobile: For Fun and Profit"} --- \href{http://whereconf.com/where2011/public/schedule/speaker/110352}{O'Reilly Where 2.0 2011} \& \href{http://zendcon.com/2011/speaker/#4054}{ZendCon 2011}
-\end{spacing}
-
-\section{Community \& Awards}
-
-Co-Organizer \& Founder of \href{http://queensjs.com/}{QueensJS}, former \href{http://www.meetup.com/dallasphp/}{DallasPHP} co-organizer
-\\
-Co-Organizer of the \href{http://lonestarphp.com/}{Lone Star PHP 2012, 2013, \& 2014 Conference}
-\\
-Eagle Scout Rank, Boy Scouts of America, 2004
+	{An application built over a week in Rails that allows users to register and build sortable lists of their favorite movies, tv shows, music and books.}
 
 \section{Education}
 
 \stdtable{
-School              & Texas A\&M University \hfill Class of 2009\\ 
-Degree              & B.S., Computer Science; Minor, Business Administration\\
+School              & Wentworth Institute of Technology Boston, MA\\
+Degree              & Bachelor of Science in Computer Networking\\
 }
 
 \end{document}
